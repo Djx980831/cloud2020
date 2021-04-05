@@ -1,5 +1,6 @@
 package com.ayguigu.springcloud.config;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -15,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationContextConfig {
 
     @Bean
+    @LoadBalanced //此注解赋予了RestTemplate负载均衡的能力
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
