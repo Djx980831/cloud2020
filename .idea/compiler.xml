@@ -16,6 +16,7 @@
         <module name="cloud-erueka-7002" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-providerconsul-payment8006" />
+        <module name="cloud-consumer-feign-order80" />
         <module name="com-consumer-zk-order80" />
       </profile>
     </annotationProcessing>
