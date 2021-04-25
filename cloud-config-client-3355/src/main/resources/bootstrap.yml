@@ -1,0 +1,24 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master #分支名
+      name: config  #配置文件名称
+      profile: dev  #读取后缀名称， 上述三个综合，master分支上的config-dev.yml 的配置文件被读取，http://config-3344.com/master/config-dev.yml
+      uri: http://localhost:3344
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
