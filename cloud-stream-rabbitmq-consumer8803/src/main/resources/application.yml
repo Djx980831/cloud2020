@@ -1,5 +1,5 @@
 server:
-  port: 8802
+  port: 8803
 
 spring:
   application:
@@ -21,7 +21,7 @@ spring:
           destination: studyExchange  #表示要使用的exchange名称定义
           content-type: application/json  #设置消息类型，本次为json，文本设置"text/plain"
           binder: defaultRabbit #设置绑定的消息服务的具体设置
-          group: atguiguA  #分组，可解决重复消费问题
+          group: atguiguA    #分组，可解决重复消费问题
 
 eureka:
   client:
@@ -30,5 +30,5 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳时间间隔（默认30s）
     lease-expiration-duration-in-seconds: 5  #如果现在超过5秒的间隔（默认90s）
-    instance-id: receive-8802.com #在信息列表时显示的主机
+    instance-id: receive-8803.com #在信息列表时显示的主机
     prefer-ip-address: true #访问的路径变成ip地址
