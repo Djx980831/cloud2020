@@ -11,7 +11,8 @@ spring:
         tx-service-group: fsp_tx_group
     nacos:
       discovery:
-        server-addr: localhost:8848
+        serverAddr: localhost:8848
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/seata_order
@@ -24,8 +25,8 @@ feign:
 
 logging:
   level:
-   io:
-     seata: info
+    io:
+      seata: info
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
