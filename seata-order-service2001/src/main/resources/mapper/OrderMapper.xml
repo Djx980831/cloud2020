@@ -17,6 +17,6 @@
     </insert>
 
     <update id="update">
-        update t_order set status = 1 where user_id = #{user_id} and status = #{status}
+        update t_order set status = 1 where user_id = #{userId} and status = #{status}
     </update>
 </mapper>

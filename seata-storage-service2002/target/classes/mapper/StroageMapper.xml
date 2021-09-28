@@ -5,13 +5,13 @@
     <resultMap id="BaseResultMap" type="com.atguigu.springcloud.alibaba.domain.Storage">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <id column="product_id" property="productId" jdbcType="BIGINT"/>
-        <id column="tatal" property="tatal" jdbcType="INTEGER"/>
+        <id column="total" property="total" jdbcType="INTEGER"/>
         <id column="userd" property="used" jdbcType="DECIMAL"/>
         <id column="residur" property="residur" jdbcType="INTEGER"/>
     </resultMap>
 
     <update id="decrease">
-        update t_storage set total = tatal - #{count}, used = used + #{tatal}
+        update t_storage set residur = residur - #{count}, used = used + #{count}
         where
         product_id = #{productId}
     </update>

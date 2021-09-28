@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class Storage {
     private Long id;
     private Long productId;
-    private Integer tatal;
+    private Integer total;
     private Integer used;
     private Integer residur;
 }

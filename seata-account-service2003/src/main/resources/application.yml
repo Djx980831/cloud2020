@@ -15,7 +15,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/seata_order
+    url: jdbc:mysql://localhost:3306/seata_account
     username: root
     password: Djx980831
 
